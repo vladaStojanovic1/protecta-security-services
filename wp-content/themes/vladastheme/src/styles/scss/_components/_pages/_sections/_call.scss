@@ -1,0 +1,15 @@
+.m-call {
+  padding: 50px 0;
+
+  @include media-up(l) {
+    padding: 100px 0;
+  }
+
+  .overlay-1 {
+    background-position: -500px center;
+
+    @include media-down(xl) {
+      background-position: -600px center;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.m-headerHome {
+  margin: -30px 0;
+
+  @include media-up(l) {
+    margin: -25px 0;
+  }
+
+  &__fixedText {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+
+    @include media-up(l) {
+      width: 50%;
+    }
+
+    &--bigTitle {
+      font-size: 40px;
+      line-height: 1;
+
+      @include media-up(l) {
+        font-size: 70px;
+      }
+    }
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    height: 580px;
+
+    @include media-up(s) {
+      background-position: center;
+    }
+
+    @include media-up(l) {
+      height: 780px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      background-image: linear-gradient(120deg, #292929 25%, #29292900 75%);
+      opacity: 0.8;
+    }
+  }
+}
