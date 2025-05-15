@@ -13,7 +13,7 @@ $why_item_5 = get_field('why_item_5');
 $why_item_6 = get_field('why_item_6');
 ?>
 
-<section class="m-aboutUs sections-spacing -why">
+<section class="m-aboutUs sections-spacing -why counter-section">
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-7 order-2 order-lg-1 mt-5 mt-lg-0">

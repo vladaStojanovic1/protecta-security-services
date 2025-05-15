@@ -11,7 +11,7 @@ $about_us_item_2_text = get_field('about_us_item_2_text');
 $about_us_btn = get_field('about_us_btn');
 ?>
 
-<section class="m-aboutUs sections-spacing">
+<section class="m-aboutUs sections-spacing counter-section">
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6 col-lg-6 order-2 order-lg-1 mt-5 mt-lg-0">

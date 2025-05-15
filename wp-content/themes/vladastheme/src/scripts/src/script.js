@@ -152,19 +152,25 @@
             //     }
             // });
 
-            gsap.utils.toArray(".counterOne").forEach(counter => {
-                gsap.from(counter, {
-                    textContent: "0",
-                    duration: 4,
-                    modifiers: {
-                        textContent: value => formatNumber(value, 0) + "+"
-                    },
-                    scrollTrigger: {
-                        trigger: counter,
-                        start: "top bottom",
-                    }
+            gsap.utils.toArray(".counter-section").forEach(section => {
+                const counters = section.querySelectorAll(".counterOne");
+
+                counters.forEach(counter => {
+                    gsap.from(counter, {
+                            textContent: "0",
+                            duration: 4,
+                            modifiers: {
+                                textContent: value => formatNumber(value, 0) + "+"
+                            },
+                            scrollTrigger: {
+                                trigger: section,
+                                start: "top bottom",
+                            }
+                        }
+                    );
                 });
             });
+
 
             function formatNumber(value, decimals) {
                 let s = (value).toLocaleString('en-US').split(".");
@@ -175,9 +181,7 @@
         gsap.registerPlugin(ScrollTrigger);
         document.querySelectorAll('.bar-fill').forEach(bar => {
             const percent = bar.getAttribute('data-percent');
-            console.log("Animating to:", percent);
 
-            // Dodaj tekst u bar ako nije već dodat
             if (!bar.querySelector('.bar-text')) {
                 const span = document.createElement('span');
                 span.classList.add('bar-text');
