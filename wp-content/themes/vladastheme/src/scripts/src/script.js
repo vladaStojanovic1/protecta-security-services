@@ -139,20 +139,32 @@
 
             let mm = gsap.matchMedia();
 
-            // mm.add('(min-width:900px)', () => {
-            gsap.from(".counterOne", {
-                textContent: "0",
-                duration: 4,
-                modifiers: {
-                    textContent: value => formatNumber(value, 0) + "+"
-                },
-                // snap: { textContent: 1 },
-                scrollTrigger: {
-                    trigger: ".m-aboutUs",
-                    start: "top bottom",
-                }
-            });
+            // gsap.from(".counterOne", {
+            //     textContent: "0",
+            //     duration: 4,
+            //     modifiers: {
+            //         textContent: value => formatNumber(value, 0) + "+"
+            //     },
+            //     // snap: { textContent: 1 },
+            //     scrollTrigger: {
+            //         trigger: ".m-aboutUs",
+            //         start: "top bottom",
+            //     }
             // });
+
+            gsap.utils.toArray(".counterOne").forEach(counter => {
+                gsap.from(counter, {
+                    textContent: "0",
+                    duration: 4,
+                    modifiers: {
+                        textContent: value => formatNumber(value, 0) + "+"
+                    },
+                    scrollTrigger: {
+                        trigger: counter,
+                        start: "top bottom",
+                    }
+                });
+            });
 
             function formatNumber(value, decimals) {
                 let s = (value).toLocaleString('en-US').split(".");
