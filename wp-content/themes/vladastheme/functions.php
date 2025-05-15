@@ -8,7 +8,13 @@ add_action('wp_enqueue_scripts', 'bootstrap_enqueue_styles');
 
 add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'vladastheme-swiper-style', get_stylesheet_directory_uri() . '/src/styles/css/vendor/swiper.min.css' );
-    wp_enqueue_style( 'vladastheme-style', get_stylesheet_uri() );
+//    wp_enqueue_style( 'vladastheme-style', get_stylesheet_uri() );
+
+    $style_path = get_stylesheet_directory() . '/style.css';
+    $style_uri  = get_stylesheet_uri();
+    $style_ver  = file_exists($style_path) ? filemtime($style_path) : null;
+
+    wp_enqueue_style( 'vladastheme-style', $style_uri, array(), $style_ver );
 
     if( WP_DEBUG === true ) {
         wp_enqueue_script( 'vladastheme-swiper', get_template_directory_uri() . '/src/scripts/src/swiper.js', array('jquery'), true );
