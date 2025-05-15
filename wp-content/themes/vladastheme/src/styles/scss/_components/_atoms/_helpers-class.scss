@@ -71,7 +71,6 @@
 }
 
 .overlay-1 {
-  //filter: brightness(70%) contrast(100%) saturate(0%) blur(0) hue-rotate(10deg);
   filter: brightness(40%) contrast(100%) saturate(0%) blur(0) hue-rotate(10deg);
   position: absolute;
   width: 100%;
@@ -79,12 +78,15 @@
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: initial;
   background-position: center;
   background-size: cover;
   z-index: -1;
-}
 
+  @include media-up(l) {
+    background-attachment: fixed;
+  }
+}
 
 .overlay-2 {
   content: "";
