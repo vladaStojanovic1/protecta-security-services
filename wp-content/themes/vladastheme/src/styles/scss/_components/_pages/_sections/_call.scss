@@ -6,10 +6,11 @@
   }
 
   .overlay-1 {
-    background-position: -500px center;
+    background-position: -300px center;
 
-    @include media-down(xl) {
-      background-position: -600px center;
+
+    @include media-up(l) {
+      background-position: -500px center;
     }
   }
 }
