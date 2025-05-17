@@ -45,7 +45,7 @@ $why_item_6 = get_field('why_item_6');
                     <h1 class="text-uppercase lh-1 mb-4"><?php echo $why_right_title; ?></h1>
                     <p class="light-text"><?php echo $why_right_text; ?></p>
 
-                    <div class="mt-4 mt-lg-5 d-flex justify-content-between border-light-lg pt-lg-5">
+                    <div class="mt-4 mt-lg-5 d-flex justify-content-between border-light-lg pt-lg-5 column-gap-20">
                         <div>
                             <div class="d-flex align-items-center lh-1 mb-2 mb-md-3">
                                 <i class="bi bi-check-circle-fill text-black fs-5 me-2"></i>
