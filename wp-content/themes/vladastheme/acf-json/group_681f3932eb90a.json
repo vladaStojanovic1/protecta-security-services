@@ -140,6 +140,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_68272d149f700",
+            "label": "Why Right Small Title",
+            "name": "why_right_small_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_681f3932f11fe",
             "label": "Why Right Text",
             "name": "why_right_text",
@@ -280,6 +299,13 @@
                 "operator": "==",
                 "value": "template-parts\/template-home.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-about.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -291,5 +317,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1746879120
+    "modified": 1747397963
 }

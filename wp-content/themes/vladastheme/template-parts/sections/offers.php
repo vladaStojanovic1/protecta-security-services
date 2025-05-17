@@ -5,7 +5,7 @@ $offer_text = get_field('offer_text');
 
 
 ?>
-<section class="m-offers" style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/images/bg-offers.png');">
+<section id="services" class="m-offers" style="background-image: url('<?php echo get_template_directory_uri(); ?>/src/images/bg-offers.png');">
     <div class="container">
         <div class="row justify-content-center mb-4 mb-md-5">
             <div class="col-lg-7">

@@ -4,6 +4,7 @@ $why_image2 = get_field('why_image_2');
 $why_number_text = get_field('why_number_text');
 $why_number = get_field('why_number');
 $why_right_title = get_field('why_right_title');
+$why_right_subtitle = get_field('why_right_small_title');
 $why_right_text = get_field('why_right_text');
 $why_item_1 = get_field('why_item_1');
 $why_item_2 = get_field('why_item_2');
@@ -19,7 +20,7 @@ $why_item_6 = get_field('why_item_6');
             <div class="col-lg-7 order-2 order-lg-1 mt-5 mt-lg-0">
                 <div class="row align-items-center">
                     <div class="col-lg-5 mb-4 mb-lg-0">
-                        <div class="m-aboutUs__image position-relative" style="background-image: url(<?php echo $about_us_image; ?>)">
+                        <div class="m-aboutUs__image position-relative" style="background-image: url(<?php echo $why_image; ?>)">
                             <span class="corner bottom-left"></span>
                             <span class="corner top-right"></span>
                             <div class="overlay-2"></div>
@@ -27,7 +28,7 @@ $why_item_6 = get_field('why_item_6');
                     </div>
 
                     <div class="col-lg-7">
-                        <div class="m-aboutUs__image -second" style="background-image: url(<?php echo get_template_directory_uri(); ?>/src/images/why.jpg)">
+                        <div class="m-aboutUs__image -second" style="background-image: url(<?php echo $why_image2; ?>)">
                             <div class="m-aboutUs__image--whiteBox">
                                 <h1 class="text-yellow mb-2 counterOne"><?php echo $why_number; ?></h1>
                                 <p class="mb-0"><?php echo $why_number_text; ?></p>
@@ -40,7 +41,7 @@ $why_item_6 = get_field('why_item_6');
 
             <div class="col-lg-5 order-1 order-lg-2 m-aboutUs__rightText">
                 <div>
-                    <p class="primary-text-color d-flex align-items-center fw-semibold mb-3 fst-italic text-nowrap"><span class="line-text me-3 dark-bg"></span> Why Choose Us</p>
+                    <p class="primary-text-color d-flex align-items-center fw-semibold mb-3 fst-italic text-nowrap"><span class="line-text me-3 dark-bg"></span> <?php echo $why_right_subtitle; ?></p>
                     <h1 class="text-uppercase lh-1 mb-4"><?php echo $why_right_title; ?></h1>
                     <p class="light-text"><?php echo $why_right_text; ?></p>
 

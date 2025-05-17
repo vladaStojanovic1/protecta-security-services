@@ -8,14 +8,14 @@ $experienced_text = get_field('experienced_text');
 
     <div class="container position-relative">
         <div class="row justify-content-between align-items-center">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div>
                     <h1 class="text-uppercase lh-1 text-white"><?php echo $experienced_title; ?></h1>
                     <span class="line-text"></span>
                 </div>
 
             </div>
-            <div class="col-md-7 mt-4 mt-md-0">
+            <div class="col-md-6 mt-4 mt-md-0">
                 <p class="text-white mb-5"><?php echo $experienced_text; ?></p>
 
                 <div>

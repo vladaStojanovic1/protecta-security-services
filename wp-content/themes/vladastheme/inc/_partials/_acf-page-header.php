@@ -54,7 +54,7 @@ function headerHomePage() {
                            <p class="text-white"><?php echo $header_text; ?></p>
                             <div class="mt-5 d-flex align-items-center">
                                 <a class="a-btn -primary me-3" href="<?php echo $header_button_1['url']; ?>"><?php echo $header_button_1['title']; ?></a>
-                                <a class="a-btn -secondary" href="<?php echo $header_button_1['url']; ?>"><?php echo $header_button_2['title']; ?></a>
+                                <a class="a-btn -secondary" href="<?php echo $header_button_2['url']; ?>"><?php echo $header_button_2['title']; ?></a>
                             </div>
                        </div>
                    </div>
@@ -78,18 +78,28 @@ function headerHomePage() {
 function headerPage() {
     $header_image = get_field('header_image');
     $header_title = get_field('header_title');
-    $image = get_ftheme_first([$header_image, get_the_post_thumbnail_url(), randomHeaderImage()]);
-    $title = get_ftheme_first([$header_title, get_the_title(), get_the_archive_title()]); ?>
+//    $image = get_ftheme_first([$header_image, get_the_post_thumbnail_url(), randomHeaderImage()]);
+//    $title = get_ftheme_first([$header_title, get_the_title(), get_the_archive_title()]);
 
-    <section class="section header-section header-overlay" style="background-image: url(<?php echo $image; ?>);">
-        <div class="wrapper">
-            <div class="header-title">
-                <h1 class="title">
-                    <?php
-                    echo $title; ?>
-                </h1>
+    ?>
+
+    <header class="m-headerHome -otherPages position-relative sections-spacing">
+        <div class="overlay-1" style="background-image: url(<?php echo $header_image; ?>)"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="m-headerHome__fixedText">
+                        <?php if ( function_exists('yoast_breadcrumb') ) {
+                            yoast_breadcrumb( '<p id="breadcrumbs" class="fw-semibold mt-4">','</p>' );
+                        }
+                        ?>
+                        <h1 class="text-uppercase text-white lh-1"><?php echo $header_title; ?></h1>
+                        <span class="line-text-2 mt-4"></span>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </header>
     <?php
 }

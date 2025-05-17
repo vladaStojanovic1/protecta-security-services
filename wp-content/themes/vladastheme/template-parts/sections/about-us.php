@@ -11,7 +11,7 @@ $about_us_item_2_text = get_field('about_us_item_2_text');
 $about_us_btn = get_field('about_us_btn');
 ?>
 
-<section class="m-aboutUs sections-spacing counter-section">
+<section id="about-us" class="m-aboutUs sections-spacing counter-section">
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6 col-lg-6 order-2 order-lg-1 mt-5 mt-lg-0">
@@ -32,15 +32,15 @@ $about_us_btn = get_field('about_us_btn');
                     <h1 class="text-uppercase lh-1 mb-4"><?php echo $about_us_right_title; ?></h1>
                     <p class="light-text"><?php echo $about_us_right_text; ?></p>
 
-                    <div class="d-flex mt-5 m-aboutUs__iconsBox flex-column flex-md-row">
-                        <div class="d-flex border-right pe-md-4 pt-md-4 mb-3 mb-md-0">
+                    <div class="row d-flex mt-5 m-aboutUs__iconsBox flex-column flex-md-row">
+                        <div class="col-md-6 d-flex border-right pe-md-4 pt-md-4 mb-3 mb-md-0">
                             <i class="bi bi-person-gear fs-2 icon-box me-3"></i>
                             <div>
                                 <h3 class="text-uppercase mb-2"><?php echo $about_us_item_1_title ?></h3>
                                 <p><?php echo $about_us_item_1_text ?></p>
                             </div>
                         </div>
-                        <div class="d-flex ps-md-4 pt-md-4">
+                        <div class="col-md-6 d-flex ps-md-4 pt-md-4">
                             <i class="bi bi-crosshair2 fs-2 icon-box me-3"></i>
                             <div>
                                 <h3 class="text-uppercase mb-2"><?php echo $about_us_item_2_title ?></h3>

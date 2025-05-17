@@ -5,6 +5,17 @@
     margin: -25px 0;
   }
 
+  &.-otherPages {
+    min-height: 500px;
+
+    .line-text-2 {
+      width: 100px;
+      height: 10px;
+      background-color: #fff;
+      display: inline-block;
+    }
+  }
+
   &__fixedText {
     z-index: 2;
     position: absolute;
@@ -13,7 +24,11 @@
     width: 400px;
 
     @include media-up(l) {
-      width: 50%;
+      width: 55%;
+    }
+
+    @include media-up(xl) {
+      width: 45%;
     }
 
     &--bigTitle {

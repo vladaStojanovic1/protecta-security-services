@@ -101,12 +101,12 @@
   &:hover {
     filter: unset;
   }
-
-  @include media-up(l) {
-    &:hover {
-      background-position: -140px;
-    }
-  }
+  //
+  //@include media-up(l) {
+  //  &:hover {
+  //    background-position: -140px;
+  //  }
+  //}
 }
 
 .border-light-lg {

@@ -1,0 +1,10 @@
+#breadcrumbs {
+  span, a {
+    font-size: 20px;
+    color: $white;
+
+    &.breadcrumb_last {
+      color: $yellow;
+    }
+  }
+}

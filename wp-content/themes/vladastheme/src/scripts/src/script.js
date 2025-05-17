@@ -71,7 +71,7 @@
                     if (target.length) {
                         $('html, body').stop().animate({
                             scrollTop: target.offset().top - 75
-                        }, 1000);
+                        }, 500);
                         return false;
                     }
                 }
@@ -134,7 +134,7 @@
 
 
         // GSAP Counter animation
-        if (document.body.classList.contains('home') || document.body.classList.contains('page-template-template-home'))  {
+        if (document.body.classList.contains('home') || document.body.classList.contains('page-template-template-home') || document.body.classList.contains('page-template-template-about')){
             gsap.registerPlugin(ScrollTrigger);
 
             let mm = gsap.matchMedia();
