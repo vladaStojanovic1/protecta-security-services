@@ -28,7 +28,7 @@ $footer_left_text = get_field('footer_left_text','options');
 
            <div class="col-md-3 w-20-lg">
                <div class="m-footer__menu text-center text-md-start mb-5 mb-md-0">
-                   <h5 class="text-uppercase text-white mb-3 mb-md-4">Quick link</h5>
+                   <h5 class="text-uppercase text-white mb-3 mb-md-4">Quick links</h5>
                    <?php wp_nav_menu( array( 'theme_location' => 'desktop-menu' ) ); ?>
                </div>
            </div>

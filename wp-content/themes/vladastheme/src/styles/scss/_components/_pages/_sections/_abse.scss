@@ -1,0 +1,33 @@
+.m-abse {
+
+  &__firstRow {
+    margin-bottom: 70px;
+  }
+
+  &__itemImage {
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    filter: brightness(100%) contrast(100%) saturate(0%) blur(0) hue-rotate(10deg);
+    transition: all ease-in .3s;
+
+    &:hover {
+      filter: unset;
+    }
+
+  }
+
+
+  &__secondRow {
+    background-color: $gray-9;
+    padding: 50px 15px 0 15px;
+
+    @include media-up(l) {
+      padding: 50px;
+    }
+
+    &--textBox {
+
+    }
+  }
+}

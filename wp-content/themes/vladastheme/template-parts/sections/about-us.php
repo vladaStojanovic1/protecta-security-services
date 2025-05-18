@@ -16,7 +16,7 @@ $about_us_btn = get_field('about_us_btn');
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6 col-lg-6 order-2 order-lg-1 mt-5 mt-lg-0">
                 <div>
-                    <div class="m-aboutUs__image" style="background-image: url(<?php echo $about_us_image; ?>)">
+                    <div class="m-aboutUs__image -bigger" style="background-image: url(<?php echo $about_us_image; ?>)">
                         <span class="corner bottom-left"></span>
                         <div class="m-aboutUs__image--whiteBox">
                             <h1 class="text-yellow mb-2 counterOne"><?php echo $about_us_years ?></h1>

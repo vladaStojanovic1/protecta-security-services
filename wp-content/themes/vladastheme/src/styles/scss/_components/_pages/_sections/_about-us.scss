@@ -22,6 +22,12 @@
       }
     }
 
+    &.-bigger {
+      @include media-up(m) {
+        min-height: 700px;
+      }
+    }
+
     &::before {
       content: "";
       position: absolute;
