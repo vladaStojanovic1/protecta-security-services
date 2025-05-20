@@ -6,6 +6,7 @@
             "key": "field_681f8098c94ee",
             "label": "Call Background",
             "name": "call_background",
+            "aria-label": "",
             "type": "image",
             "instructions": "",
             "required": 0,
@@ -30,6 +31,7 @@
             "key": "field_681f89f8f6481",
             "label": "Call Title",
             "name": "call_title",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -49,6 +51,7 @@
             "key": "field_681f8a02f6482",
             "label": "Call Text",
             "name": "call_text",
+            "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -68,6 +71,7 @@
             "key": "field_681f8a0df6483",
             "label": "Call Button",
             "name": "call_button",
+            "aria-label": "",
             "type": "link",
             "instructions": "",
             "required": 0,
@@ -87,6 +91,69 @@
                 "operator": "==",
                 "value": "template-parts\/template-home.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-about.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-services.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-contact.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-armed-guards.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-cctv-monitoring.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-executive-protection.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-master-hoa.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-special-event-services.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-unarmed-officers.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -98,5 +165,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1746897433
+    "modified": 1747761427
 }

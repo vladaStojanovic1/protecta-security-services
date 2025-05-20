@@ -30,7 +30,7 @@ $about_us_btn = get_field('about_us_btn');
                 <div>
                     <p class="primary-text-color d-flex align-items-center fw-semibold mb-3 fst-italic text-nowrap"><span class="line-text me-3 dark-bg"></span> About Us</p>
                     <h1 class="text-uppercase lh-1 mb-4"><?php echo $about_us_right_title; ?></h1>
-                    <p class="light-text"><?php echo $about_us_right_text; ?></p>
+                    <p><?php echo $about_us_right_text; ?></p>
 
                     <div class="row d-flex mt-5 m-aboutUs__iconsBox flex-column flex-md-row">
                         <div class="col-md-6 d-flex border-right pe-md-4 pt-md-4 mb-3 mb-md-0">

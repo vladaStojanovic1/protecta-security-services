@@ -45,7 +45,7 @@ $footer_left_text = get_field('footer_left_text','options');
                <div>
                    <div class="d-flex align-items-center mb-1 mb-md-2 justify-content-center justify-content-md-start">
                        <i class="bi bi-geo-alt-fill text-yellow me-3 fs-5"></i>
-                       <a class="fs-14" href="<?php echo $address; ?>">4955 S. Durango Dr, Suite 168, Las Vegas, NV</a>
+                       <a class="fs-14" target="_blank" href="<?php echo $address; ?>">4955 S. Durango Dr, Suite 168, Las Vegas, NV</a>
                    </div>
                    <div class="d-flex align-items-center mb-1 mb-md-2 justify-content-center justify-content-md-start">
                        <i class="bi bi-telephone-fill text-yellow me-3 fs-5"></i>

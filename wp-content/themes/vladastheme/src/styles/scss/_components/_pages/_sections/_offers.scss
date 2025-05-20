@@ -8,17 +8,19 @@
   &__item {
     background-color: $white;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06),
-    0 1px 3px rgba(0, 0, 0, 0.1);
+    //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06),
+    //0 1px 3px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
     height: 100%;
     position: relative;
     padding: 20px 20px 50px 20px;
 
-    &:hover {
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12),
-      0 4px 6px rgba(0, 0, 0, 0.08);
-    }
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    //&:hover {
+    //  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12),
+    //  0 4px 6px rgba(0, 0, 0, 0.08);
+    //}
 
     a {
       position: absolute;

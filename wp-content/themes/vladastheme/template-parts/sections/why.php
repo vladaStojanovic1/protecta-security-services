@@ -43,7 +43,7 @@ $why_item_6 = get_field('why_item_6');
                 <div>
                     <p class="primary-text-color d-flex align-items-center fw-semibold mb-3 fst-italic text-nowrap"><span class="line-text me-3 dark-bg"></span> <?php echo $why_right_subtitle; ?></p>
                     <h1 class="text-uppercase lh-1 mb-4"><?php echo $why_right_title; ?></h1>
-                    <p class="light-text"><?php echo $why_right_text; ?></p>
+                    <p><?php echo $why_right_text; ?></p>
 
                     <div class="mt-4 mt-lg-5 d-flex justify-content-between border-light-lg pt-lg-5 column-gap-20">
                         <div>

@@ -149,3 +149,47 @@
 
 }
 
+
+.corner {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+.top-right {
+  top: 15px;
+  right: 15px;
+  border-top: 7px solid $yellow;
+  border-right: 7px solid $yellow;
+}
+
+.bottom-left {
+  bottom: 15px;
+  left: 15px;
+  border-bottom: 7px solid $yellow;
+  border-left: 7px solid $yellow;
+}
+
+.top-left {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+  border-top: 7px solid $yellow;
+  border-left: 7px solid $yellow;
+  z-index: 1;
+}
+
+.bottom-right {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 60px;
+  height: 60px;
+  border-bottom: 7px solid $yellow;
+  border-right: 7px solid $yellow;
+}
