@@ -123,4 +123,6 @@ function get_excerpt_words($content, $word_limit = 50) {
     return $excerpt;
 }
 
+// Yoast SEO title support
+add_theme_support( 'title-tag' );
 
