@@ -154,6 +154,13 @@
                 "operator": "==",
                 "value": "template-parts\/template-unarmed-officers.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-parts\/template-404.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -165,5 +172,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747761427
+    "modified": 1747857951
 }

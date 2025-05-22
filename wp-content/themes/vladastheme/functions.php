@@ -8,6 +8,7 @@ add_action('wp_enqueue_scripts', 'bootstrap_enqueue_styles');
 
 add_action( 'wp_enqueue_scripts', function () {
     wp_enqueue_style( 'vladastheme-swiper-style', get_stylesheet_directory_uri() . '/src/styles/css/vendor/swiper.min.css' );
+    wp_enqueue_style( 'vladastheme-animate', get_stylesheet_directory_uri() . '/src/styles/css/vendor/aos.css' );
 //    wp_enqueue_style( 'vladastheme-style', get_stylesheet_uri() );
 
     $style_path = get_stylesheet_directory() . '/style.css';
@@ -20,12 +21,14 @@ add_action( 'wp_enqueue_scripts', function () {
         wp_enqueue_script( 'vladastheme-swiper', get_template_directory_uri() . '/src/scripts/src/swiper.js', array('jquery'), true );
 //        wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/src/scripts/src/fancybox.js', array('jquery'), true );
         wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/src/scripts/src/bootstrap.bundle.min.js', array(), null, true);
+        wp_enqueue_script('as-js', get_template_directory_uri() . '/src/scripts/src/aos.js', array(), null, true);
         wp_enqueue_script( 'vladastheme-script', get_template_directory_uri() . '/src/scripts/src/script.js', array('jquery'), true );
     } else {
         wp_enqueue_script( 'vladastheme-swiper', get_template_directory_uri() . '/src/scripts/src/swiper.js', array('jquery'), true );
 //        wp_enqueue_script( 'fancybox', get_template_directory_uri() . '/src/scripts/src/fancybox.js', array('jquery'), true );
         wp_enqueue_script( 'textPlugin', get_template_directory_uri() . '/src/scripts/src/textPlugin.min.js', array('jquery'), true );
         wp_enqueue_script( 'gsap', get_template_directory_uri() . '/src/scripts/src/gsap.min.js', array('jquery'), true );
+        wp_enqueue_script('aos-js', get_template_directory_uri() . '/src/scripts/src/aos.js', array(), null, true);
         wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/src/scripts/src/bootstrap.bundle.min.js', array(), true);
 
 //        wp_enqueue_script( 'vladastheme-script-min', get_template_directory_uri() . '/bundles/scripts/scripts.min.js', array('jquery'), true );

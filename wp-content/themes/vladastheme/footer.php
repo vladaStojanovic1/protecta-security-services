@@ -15,7 +15,7 @@ $footer_left_text = get_field('footer_left_text','options');
        <div class="row">
            <div class="col-md-3 me-lg-auto text-center text-md-start mb-5 mb-md-0">
                <div>
-                   <img src="<?php echo $site_logo; ?>" alt="">
+                   <img src="<?php echo $site_logo; ?>" alt="logo-protecta"  data-aos="flip-up" data-aos-easing="ease-in-sine">
                    <p class="mb-0 mt-4 fs-14 m-footer__leftText"><?php echo $footer_left_text; ?></p>
 
                    <div class="mt-4">

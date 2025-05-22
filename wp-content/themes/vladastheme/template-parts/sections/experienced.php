@@ -16,7 +16,9 @@ $e_item_percentage_4 = get_field('e_item_percentage_4');
 
     <div class="container position-relative">
         <div class="row justify-content-between align-items-center">
-            <div class="col-md-5">
+            <div class="col-md-5" data-aos="fade-right"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
                 <div>
                     <h1 class="text-uppercase lh-1 text-white"><?php echo $experienced_title; ?></h1>
                     <span class="line-text"></span>
@@ -24,7 +26,9 @@ $e_item_percentage_4 = get_field('e_item_percentage_4');
 
             </div>
             <div class="col-md-6 mt-4 mt-md-0">
-                <p class="text-white mb-5"><?php echo $experienced_text; ?></p>
+                <p class="text-white mb-5" data-aos="fade-down"
+                   data-aos-offset="100"
+                   data-aos-easing="ease-in-sine"><?php echo $experienced_text; ?></p>
 
                 <div>
                     <div class="progress-bar-container">

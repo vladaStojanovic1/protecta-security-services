@@ -15,11 +15,14 @@ $why_item_6 = get_field('why_item_6');
 ?>
 
 <section class="m-aboutUs sections-spacing -why counter-section">
+    <div id="scroll"></div>
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-7 order-2 order-lg-1 mt-5 mt-lg-0">
                 <div class="row align-items-center">
-                    <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-up"
+                         data-aos-offset="100"
+                         data-aos-easing="ease-in-sine">
                         <div class="m-aboutUs__image position-relative" style="background-image: url(<?php echo $why_image; ?>)">
                             <span class="corner bottom-left"></span>
                             <span class="corner top-right"></span>
@@ -27,7 +30,9 @@ $why_item_6 = get_field('why_item_6');
                         </div>
                     </div>
 
-                    <div class="col-lg-7">
+                    <div class="col-lg-7" data-aos="fade-down"
+                         data-aos-offset="100"
+                         data-aos-easing="ease-in-sine">
                         <div class="m-aboutUs__image -second" style="background-image: url(<?php echo $why_image2; ?>)">
                             <div class="m-aboutUs__image--whiteBox">
                                 <h1 class="text-yellow mb-2 counterOne"><?php echo $why_number; ?></h1>
@@ -39,7 +44,9 @@ $why_item_6 = get_field('why_item_6');
                 </div>
             </div>
 
-            <div class="col-lg-5 order-1 order-lg-2 m-aboutUs__rightText">
+            <div class="col-lg-5 order-1 order-lg-2 m-aboutUs__rightText" data-aos="fade-left"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
                 <div>
                     <p class="primary-text-color d-flex align-items-center fw-semibold mb-3 fst-italic text-nowrap"><span class="line-text me-3 dark-bg"></span> <?php echo $why_right_subtitle; ?></p>
                     <h1 class="text-uppercase lh-1 mb-4"><?php echo $why_right_title; ?></h1>

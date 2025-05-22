@@ -10,9 +10,12 @@ $contact_google_map = get_field('contact_google_map');
 ?>
 
 <section class="m-contact sections-spacing">
+    <div id="scroll"></div>
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-lg-5 col-lg-smaller">
+            <div class="col-lg-5 col-lg-smaller" data-aos="fade-up"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
                 <p class="primary-text-color d-flex align-items-center fw-semibold mb-2 fst-italic text-nowrap"><span class="line-text me-3 dark-bg"></span> <?php echo $contact_small_title; ?></p>
                 <h1 class="text-uppercase lh-1 mb-4"><?php echo $contact_title; ?></h1>
                 <p><?php echo $contact_text; ?></p>
@@ -22,7 +25,9 @@ $contact_google_map = get_field('contact_google_map');
                 </div>
             </div>
 
-            <div class="col-lg-6 mt-4 mt-lg-0">
+            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-down"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
                 <div>
                     <?php echo html_entity_decode($contact_google_map); ?>
                 </div>

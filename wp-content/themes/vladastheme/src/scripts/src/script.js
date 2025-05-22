@@ -202,6 +202,7 @@
         });
 
 
+        AOS.init();
     });
 
     $(window).on('load', function () {

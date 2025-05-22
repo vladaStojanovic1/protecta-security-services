@@ -47,11 +47,13 @@ function headerHomePage() {
            <!-- Fixed Text -->
            <div class="container">
                <div class="row">
-                   <div class="col-md-5">
+                   <div class="col-md-5" >
                        <div class="m-headerHome__fixedText">
                            <p class="text-yellow d-flex align-items-center fw-semibold mb-3 fst-italic text-nowrap"><span class="line-text me-3"></span> <?php echo $header_smallTitle; ?></p>
-                           <h1 class="m-headerHome__fixedText--bigTitle text-uppercase text-white mb-4"><?php echo $header_title; ?></h1>
-                           <p class="text-white"><?php echo $header_text; ?></p>
+                           <h1 data-aos="fade-right"
+                               data-aos-offset="300"
+                               data-aos-easing="ease-in-sine" class="m-headerHome__fixedText--bigTitle text-uppercase text-white mb-4"><?php echo $header_title; ?></h1>
+                           <p class="text-white" data-aos="fade-up"><?php echo $header_text; ?></p>
                             <div class="mt-5 d-flex align-items-center">
                                 <a class="a-btn -primary me-3" href="<?php echo $header_button_1['url']; ?>"><?php echo $header_button_1['title']; ?></a>
                                 <a class="a-btn -secondary" href="<?php echo $header_button_2['url']; ?>"><?php echo $header_button_2['title']; ?></a>
@@ -67,6 +69,14 @@ function headerHomePage() {
                <div class="swiper-slide" style="background-image: url(<?php echo $header_image2 ?>);"></div>
            </div>
        </div>
+
+
+
+       <a href="#scroll" class="scroll-btn">
+           <div class="chevron"></div>
+           <div class="chevron"></div>
+           <div class="chevron"></div>
+       </a>
    </header>
     <?php
 }
@@ -88,18 +98,26 @@ function headerPage() {
 
         <div class="container">
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7" >
                     <div class="m-headerHome__fixedText">
                         <?php if ( function_exists('yoast_breadcrumb') ) {
                             yoast_breadcrumb( '<p id="breadcrumbs" class="fw-semibold mt-4">','</p>' );
                         }
                         ?>
-                        <h1 class="text-uppercase text-white lh-1"><?php echo $header_title; ?></h1>
+                        <h1 class="text-uppercase text-white lh-1" data-aos="fade-right"
+                            data-aos-offset="300"
+                            data-aos-easing="ease-in-sine"><?php echo $header_title; ?></h1>
                         <span class="line-text-2 mt-4"></span>
                     </div>
                 </div>
             </div>
         </div>
+
+        <a href="#scroll" class="scroll-btn">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </a>
     </header>
     <?php
 }

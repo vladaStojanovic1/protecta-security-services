@@ -12,10 +12,13 @@ $about_us_btn = get_field('about_us_btn');
 ?>
 
 <section id="about-us" class="m-aboutUs sections-spacing counter-section">
+    <div id="scroll"></div>
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6 col-lg-6 order-2 order-lg-1 mt-5 mt-lg-0">
-                <div>
+                <div data-aos="fade-right"
+                     data-aos-offset="100"
+                     data-aos-easing="ease-in-sine">
                     <div class="m-aboutUs__image -bigger" style="background-image: url(<?php echo $about_us_image; ?>)">
                         <span class="corner bottom-left"></span>
                         <div class="m-aboutUs__image--whiteBox">
@@ -26,7 +29,9 @@ $about_us_btn = get_field('about_us_btn');
                 </div>
             </div>
 
-            <div class="col-lg-6 col-lg-smaller order-1 order-lg-2">
+            <div class="col-lg-6 col-lg-smaller order-1 order-lg-2" data-aos="fade-left"
+                 data-aos-offset="100"
+                 data-aos-easing="ease-in-sine">
                 <div>
                     <p class="primary-text-color d-flex align-items-center fw-semibold mb-3 fst-italic text-nowrap"><span class="line-text me-3 dark-bg"></span> About Us</p>
                     <h1 class="text-uppercase lh-1 mb-4"><?php echo $about_us_right_title; ?></h1>
@@ -50,7 +55,7 @@ $about_us_btn = get_field('about_us_btn');
                     </div>
 
                     <div class="mt-4 mt-md-5 text-center">
-                        <a href="<?php echo $about_us_btn['utl'] ?>" class="a-btn -primary p-smaller"><?php echo $about_us_btn['title'] ?></a>
+                        <a href="<?php echo $about_us_btn['url'] ?>" class="a-btn -primary p-smaller"><?php echo $about_us_btn['title'] ?></a>
                     </div>
                 </div>
             </div>

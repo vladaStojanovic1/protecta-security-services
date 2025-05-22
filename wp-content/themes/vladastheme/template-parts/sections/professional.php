@@ -12,7 +12,8 @@ $professional_button = get_field('professional_button');
             <div class="overlay-1" style="background-image: url(<?php echo $professional_bg; ?>)"></div>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-7 col-xl-7 col-xxl-6">
+                    <div class="col-lg-7 col-xl-7 col-xxl-6" data-aos="fade-up"
+                         data-aos-anchor-placement="bottom-bottom">
                         <div class="position-relative z-2">
                             <h1 class="text-white text-uppercase lh-1 mb-4"><?php echo $professional_title ?></h1>
                             <p class="text-white mb-4"><?php echo $professional_text ?></p>

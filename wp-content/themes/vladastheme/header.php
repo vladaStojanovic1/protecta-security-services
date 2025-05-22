@@ -31,7 +31,6 @@ global $globalSite;
     ?>
 
     <?php wp_head(); ?>
-
     <link rel="profile" href="http://gmpg.org/xfn/11">
 
     <!--Favicon-->
