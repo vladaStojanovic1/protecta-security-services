@@ -51,7 +51,7 @@ function headerHomePage() {
                        <div class="m-headerHome__fixedText">
                            <p class="text-yellow d-flex align-items-center fw-semibold mb-3 fst-italic text-nowrap"><span class="line-text me-3"></span> <?php echo $header_smallTitle; ?></p>
                            <h1 data-aos="fade-right"
-                               data-aos-offset="300"
+                               data-aos-offset="100"
                                data-aos-easing="ease-in-sine" class="m-headerHome__fixedText--bigTitle text-uppercase text-white mb-4"><?php echo $header_title; ?></h1>
                            <p class="text-white" data-aos="fade-up"><?php echo $header_text; ?></p>
                             <div class="mt-5 d-flex align-items-center">
