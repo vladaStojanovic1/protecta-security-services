@@ -105,7 +105,7 @@ function headerPage() {
                         }
                         ?>
                         <h1 class="text-uppercase text-white lh-1" data-aos="fade-right"
-                            data-aos-offset="300"
+                            data-aos-offset="100"
                             data-aos-easing="ease-in-sine"><?php echo $header_title; ?></h1>
                         <span class="line-text-2 mt-4"></span>
                     </div>
