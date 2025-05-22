@@ -53,7 +53,7 @@ function headerHomePage() {
                            <h1 data-aos="fade-right"
                                data-aos-offset="100"
                                data-aos-easing="ease-in-sine" class="m-headerHome__fixedText--bigTitle text-uppercase text-white mb-4"><?php echo $header_title; ?></h1>
-                           <p class="text-white" data-aos="fade-up"><?php echo $header_text; ?></p>
+                           <p class="text-white" data-aos="fade-up" data-aos-offset="100"><?php echo $header_text; ?></p>
                             <div class="mt-5 d-flex align-items-center">
                                 <a class="a-btn -primary me-3" href="<?php echo $header_button_1['url']; ?>"><?php echo $header_button_1['title']; ?></a>
                                 <a class="a-btn -secondary" href="<?php echo $header_button_2['url']; ?>"><?php echo $header_button_2['title']; ?></a>
