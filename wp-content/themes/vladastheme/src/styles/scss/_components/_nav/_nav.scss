@@ -5,9 +5,7 @@
 
   &__logo {
     img {
-      @include media-down(l) {
-        width: 100px;
-      }
+      width: 100px;
     }
   }
 
