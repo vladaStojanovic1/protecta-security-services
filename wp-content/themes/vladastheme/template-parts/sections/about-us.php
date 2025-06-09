@@ -11,6 +11,10 @@ $about_us_item_2_text = get_field('about_us_item_2_text');
 $about_us_btn = get_field('about_us_btn');
 ?>
 
+<!--<div class="btn-wrapper">-->
+    <button id="button">Get my plan</button>
+<!--</div>-->
+
 <section id="about-us" class="m-aboutUs sections-spacing counter-section">
     <div id="scroll"></div>
     <div class="container">

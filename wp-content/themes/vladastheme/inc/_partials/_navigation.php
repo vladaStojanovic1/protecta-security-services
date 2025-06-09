@@ -1,9 +1,13 @@
+<?php
+$site_logo = get_field('site_logo','options');
+?>
+
 <nav class="m-nav">
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-3 text-lg-start text-center">
                 <a href="/" class="m-nav__logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/src/images/007-logo.png" alt="007 logo">
+                    <img src="<?php echo $site_logo; ?>" alt="">
                 </a>
             </div>
 
